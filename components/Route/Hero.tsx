@@ -63,7 +63,9 @@ const Hero = (props: Props) => {
 					<Marquee>
 					   {
 						  rowOneImages.map((image,index) => (
-							  <Image src={image.url}
+							  <Image
+								 key={index}
+								  src={image.url}
 									 alt={image.url}
 									 className={"md:m-4 w-[200px] m-2 md:w-[500px] rounded-[20px]"} width={500} height={300} />
 						  ))
@@ -72,7 +74,9 @@ const Hero = (props: Props) => {
 				   <Marquee>
 					  {
 						 rowTwoImages.map((image,index) => (
-							 <Image src={image.url}
+							 <Image
+								 key={index}
+								 src={image.url}
 									alt={image.url}
 									className={"md:m-4 w-[200px] m-2 md:w-[500px] rounded-[20px]"} width={500} height={300} />
 						 ))
